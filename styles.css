@@ -1,3 +1,4 @@
+
 /* General Styles */
 body {
     margin: 0;
@@ -25,7 +26,9 @@ header.black-bg {
 .header-cont {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px 20px; /* Reduce padding to make the navbar shorter */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .left-cont, .right-cont {
@@ -34,7 +37,7 @@ header.black-bg {
 }
 
 .header-brand {
-    max-width: 110px;
+    max-width: 80px; /* Reduce the logo size */
 }
 
 .main-nav {
@@ -44,10 +47,12 @@ header.black-bg {
 }
 
 .nav-item {
-    margin-right: 20px;
+    margin-right: 15px; /* Reduce margin between nav items */
     color: #e5e5e5;
     opacity: .83;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .nav-item:hover {
@@ -56,7 +61,7 @@ header.black-bg {
 }
 
 .right-cont svg, .right-cont img {
-    margin-right: 22px;
+    margin-right: 15px; /* Reduce margin between right items */
     cursor: pointer;
 }
 
@@ -65,37 +70,36 @@ header.black-bg {
 }
 
 .right-cont img {
-    max-width: 40px;
+    max-width: 30px; /* Reduce the profile image size */
 }
 
 /* Banner Section */
 .banner-section {
     position: relative;
-    height: 448px;
-    background-size: cover;
-    background-position: center center;
+    height: 80vh; /* Updated height */
+    background-image: url('https://m.media-amazon.com/images/S/pv-target-images/076a887091f3d57cf6ef55774e9a1e35a524107c2a656bdf6fc7bcef14e128bb.jpg'); /* Updated background image */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
     color: white;
 }
 
 .banner-content {
     position: absolute;
-    top: 140px;
-    left: 30px;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    max-width: 600px;
 }
 
 .banner-title {
     font-size: 3rem;
-    font-weight: 800;
-    padding-bottom: 0.3rem;
+    font-weight: bold;
 }
 
 .banner-description {
-    width: 45rem;
-    line-height: 1.3;
-    padding-top: 1rem;
-    font-size: 0.8rem;
-    max-width: 360px;
-    height: 80px;
+    font-size: 1.5rem;
+    margin: 1rem 0;
 }
 
 .banner-buttons {
@@ -103,33 +107,26 @@ header.black-bg {
 }
 
 .banner-button {
-    cursor: pointer;
-    color: #fff;
-    outline: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffffff; /* Netflix color */
+    color: rgb(26, 25, 25);
     border: none;
-    font-weight: 700;
-    border-radius: 0.2vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    background-color: rgba(51, 51, 51, 0.5);
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
 .banner-button:hover {
-    color: #000;
-    background-color: #e6e6e6;
-    transition: all 0.2s;
+    background-color: #d1caca;
 }
 
 .banner_fadeBottom {
     position: absolute;
-    top: 30vh;
     bottom: 0;
+    height: 20%;
     width: 100%;
-    height: 7.4rem;
-    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.6), black);
 }
 
 /* Row Section */

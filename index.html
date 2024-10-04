@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header id="header">
@@ -12,53 +13,64 @@
             <div class="left-cont">
                 <img src="images/Logonetflix.png" alt="Logo" class="header-brand">
                 <ul class="main-nav">
-                    <li class="nav-item">Tv Shows</li>
-                    <li class="nav-item">Movies</li>
-                    <li class="nav-item">News & Popular</li>
-                    <li class="nav-item">My List</li>
-                    <li class="nav-item">Browse by Languages</li>
+                    <li class="nav-item">Series</li>
+                    <li class="nav-item">Peliculas</li>
+                    <li class="nav-item">Popular</li>
+                    <li class="nav-item">Lista</li>
+                    <li class="nav-item">Languages</li>
                 </ul>
             </div>
             <div class="right-cont">
                 <svg class="search-icon">...</svg>
                 <svg class="Hawkins-Icon">...</svg>
-                <img src="profile.png" alt="Profile">
+                <img src="images/profile.png" alt="Profile">
             </div>
         </div>
     </header>
 
     <div class="banner-section" id="banner-section">
         <div class="banner-content">
-            <h1 class="banner-title">Movie Title</h1>
-            <p class="banner-description">This is a description of the movie.</p>
+            <h1 class="banner-title">Nuestra Película</h1>
+            <p class="banner-description">
+                He visto muchas películas y siempre termino creyendo que mi vida es aburrida en comparación, pero contigo estoy la mejor película de todas.
+            </p>
             <div class="banner-buttons">
-                <button class="banner-button">Play</button>
-                <button class="banner-button">My List</button>
+                <button class="banner-button"><i class="bi bi-play-fill">Play</i></button>
+                <button class="banner-button"><i class="bi bi-info-circle">Más información</i></button>
             </div>
         </div>
-        <div class="banner_fadeBottom"></div>
+        <div class="banner-fadeBottom"></div>
     </div>
-
+    
+    
     <section class="row">
         <h2>Trending Now</h2>
         <div class="row-posters">
-            <img src="nahuala.webp" alt="Poster 1" class="row-poster">
-            <img src="nahuala.webp" alt="Poster 2" class="row-poster">
-            <img src="nahuala.webp" alt="Poster 3" class="row-poster">
+            <img src="images/jack.png" alt="Poster 1" class="row-poster">
+            <img src="images/coraline.jpg" alt="Poster 2" class="row-poster">
+            <img src="images/cadaver.jpg" alt="Poster 3" class="row-poster">
+            <img src="images/barbieisla.jpg" alt="Poster 3" class="row-poster">
+            <img src="images/percy.webp" alt="Poster4" class="row-poster">
+            <img src="images/barbie12.jpg" alt="Poster 5" class="row-poster">
+
             <!-- Add more posters as needed -->
         </div>
     </section>
-
+    
     <section class="row">
         <h2>Top Rated</h2>
         <div class="row-posters">
-            <img src="poster4.jpg" alt="Poster 4" class="row-poster">
-            <img src="poster5.jpg" alt="Poster 5" class="row-poster">
-            <img src="poster6.jpg" alt="Poster 6" class="row-poster">
+            <img src="images/rata.jpeg" alt="Poster 6" class="row-poster">
+            <img src="images/novias.webp" alt="Poster 7" class="row-poster">
+            <img src="images/now.webp" alt="Poster 8" class="row-poster">
+            <img src="images/kingsman1.webp" alt="Poster 9" class="row-poster">
+            <img src="images/kingsman2.webp" alt="Poster 10" class="row-poster">
+            <img src="images/hombre.webp" alt="Poster 11" class="row-poster">
+            <img src="images/montecarlo.jpg" alt="Poster 12" class="row-poster">
             <!-- Add more posters as needed -->
         </div>
     </section>
-
+    
     <script src="scripts.js"></script>
 </body>
 </html>

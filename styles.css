@@ -146,9 +146,9 @@ header.black-bg {
 }
 
 .row-poster {
-    object-fit: contain;
-    width: 100%;
-    max-height: 200px;
+    object-fit: cover;
+    width: 320px; /* Establece un ancho fijo */
+    height: 200px; /* Establece una altura fija */
     margin-right: 10px;
     transition: transform 450ms;
 }
